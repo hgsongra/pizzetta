@@ -1,3 +1,5 @@
+Just like "A small pizza :pizza: is called a [pizzetta](https://en.wikipedia.org/wiki/Pizzetta)", I'm borrowing this name for my react app. Becuase it's small and simple to undetand the all concepts of ReactJS.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
