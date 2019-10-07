@@ -1,0 +1,8 @@
+.Pizza {
+  background-color: #ecae5c;
+  width: 300px;
+  margin: auto;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+}

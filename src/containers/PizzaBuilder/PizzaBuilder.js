@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import Pizza from "../../components/Pizza/Pizza";
 
 export class PizzaBuilder extends Component {
   render() {
     return (
       <>
-        <div>Pizza Preview</div>
+        <Pizza />
         <div>Pizza Controls</div>
       </>
     );
