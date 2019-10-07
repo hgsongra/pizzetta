@@ -4,15 +4,6 @@ import PropTypes from "prop-types";
 
 const ingredient = props => {
   let ingredients = null;
-  ingredients = (
-    <>
-      <div className='Corn Corn_1'></div>
-      <div className='Corn Corn_2'></div>
-      <div className='Corn Corn_3'></div>
-      <div className='Corn Corn_4'></div>
-      <div className='Corn Corn_5'></div>
-    </>
-  );
   switch (props.type) {
     case "meat":
       ingredients = (
@@ -22,8 +13,8 @@ const ingredient = props => {
         </>
       );
       break;
-    case "meat":
-      ingredients = <div className='Meat'></div>;
+    case "red_paper":
+      ingredients = <div className='RedPaper'></div>;
       break;
     case "cheese":
       ingredients = <div className='Cheese'></div>;

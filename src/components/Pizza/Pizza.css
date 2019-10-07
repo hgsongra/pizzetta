@@ -6,3 +6,12 @@
   border-radius: 50%;
   position: relative;
 }
+
+.noToppings {
+  color: azure;
+  font-size: 30px;
+  top: 130px;
+  position: absolute;
+  left: 50px;
+  font-weight: bold;
+}

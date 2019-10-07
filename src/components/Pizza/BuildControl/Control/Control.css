@@ -1,0 +1,26 @@
+.Control {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.Control button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid greenyellow;
+  cursor: pointer;
+  outline: none;
+}
+.Control .add {
+  padding: 5px;
+  border: 0px 5px solid green;
+}
+
+.Control .remove {
+  padding: 5px;
+  border: 0px 5px solid red;
+}

@@ -5,7 +5,7 @@
   height: 30px;
   border-radius: 50%;
   position: relative;
-  z-index: 999;
+  z-index: 1;
 }
 
 .Corn_1 {
@@ -44,12 +44,14 @@
   bottom: 0;
   margin: 25px;
   border-radius: 50%;
+  z-index: 0;
 }
 
 .Paneer {
   background-color: yellow;
   padding: 10px;
   position: absolute;
+  z-index: 1;
 }
 
 .Paneer_1 {
@@ -81,6 +83,7 @@
   padding: 10px;
   position: absolute;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .Meat_1 {
