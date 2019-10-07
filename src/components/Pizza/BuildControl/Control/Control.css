@@ -7,6 +7,7 @@
 }
 
 .Control button {
+  width: 120px;
   display: block;
   font: inherit;
   padding: 5px;
@@ -14,13 +15,4 @@
   border: 1px solid greenyellow;
   cursor: pointer;
   outline: none;
-}
-.Control .add {
-  padding: 5px;
-  border: 0px 5px solid green;
-}
-
-.Control .remove {
-  padding: 5px;
-  border: 0px 5px solid red;
 }

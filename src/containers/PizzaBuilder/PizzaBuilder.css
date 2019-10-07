@@ -1,0 +1,8 @@
+.displayTotal {
+  text-align: right;
+  background-color: blueviolet;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  color: aliceblue;
+}

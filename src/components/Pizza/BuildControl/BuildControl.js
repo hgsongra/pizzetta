@@ -6,7 +6,7 @@ import "./BuildControl.css";
 const BuildControl = props => {
   const controls = ["cheese", "meat", "corn", "paneer"];
   const isToppingAdded = topping => {
-    const oldIngredients = props.ingredients;
+    const oldIngredients = [...props.ingredients];
     const toppingIndex = oldIngredients.findIndex(
       ingredient => ingredient === topping
     );
@@ -24,6 +24,7 @@ const BuildControl = props => {
           label={control}
           topping={() => props.manageTopping(control)}
           isAdded={isToppingAdded(control)}
+          price={props.prices[control]}
         />
       ))}
     </div>
