@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Pizza from "../../components/Pizza/Pizza";
 import BuildControl from "../../components/Pizza/BuildControl/BuildControl";
+import Modal from "../../components/UI/Modal/Modal";
+import OrderSummary from "../../components/Pizza/OrderSummary/OrderSummary";
 import "./PizzaBuilder.css";
 
 const TOPPING_PRICES = {
@@ -13,8 +15,13 @@ const TOPPING_PRICES = {
 export class PizzaBuilder extends Component {
   state = {
     ingredients: [],
-    totalPrice: 120
+    totalPrice: 120,
+    displaySummary: false
   };
+
+  displaySummaryHandler = () => {
+    this.setState({ displaySummary: !this.state.displaySummary });
+  }
 
   topingHandler = topping => {
     const updatedIngredients = [...this.state.ingredients];
@@ -43,7 +50,21 @@ export class PizzaBuilder extends Component {
         />
         <div className='displayTotal'>
           Total Price: &#8377;{this.state.totalPrice}
+          <button
+            onClick={this.displaySummaryHandler}
+            className="CheckOut"
+            disabled={this.state.ingredients.length > 0 ? null : 'disabled'}>
+            Check Out
+          </button>
         </div>
+        <Modal
+          show={this.state.displaySummary}
+          modalClose={this.displaySummaryHandler}>
+          <OrderSummary
+            ingredients={this.state.ingredients}
+            toppingList={TOPPING_PRICES}
+            totalPrice={this.state.totalPrice} />
+        </Modal>
       </>
     );
   }

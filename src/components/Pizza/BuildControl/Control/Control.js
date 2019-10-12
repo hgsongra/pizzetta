@@ -3,8 +3,8 @@ import "./Control.css";
 
 const Control = props => (
   <div className='Control'>
-    <div>
-      {props.label.toUpperCase()} &#8377;{props.price}
+    <div style={{ textTransform: 'capitalize' }}>
+      {props.label} &#8377;{props.price}
     </div>
     <button onClick={props.topping}>{props.isAdded ? "Remove" : "Add"}</button>
   </div>
