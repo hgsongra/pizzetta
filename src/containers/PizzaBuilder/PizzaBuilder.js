@@ -23,6 +23,9 @@ export class PizzaBuilder extends Component {
     this.setState({ displaySummary: !this.state.displaySummary });
   }
 
+  placeOrderHandler = () => {
+    alert('Thanks you for Ordering at Pizzetta!');
+  }
   topingHandler = topping => {
     const updatedIngredients = [...this.state.ingredients];
     let newPrice = this.state.totalPrice;
@@ -63,7 +66,9 @@ export class PizzaBuilder extends Component {
           <OrderSummary
             ingredients={this.state.ingredients}
             toppingList={TOPPING_PRICES}
-            totalPrice={this.state.totalPrice} />
+            totalPrice={this.state.totalPrice}
+            cancel={this.displaySummaryHandler}
+            placeOrder={this.placeOrderHandler} />
         </Modal>
       </>
     );

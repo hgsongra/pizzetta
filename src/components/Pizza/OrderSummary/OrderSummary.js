@@ -12,6 +12,20 @@ const OrderSummary = (props) => {
       <p>
         Total Amount: {props.totalPrice}
       </p>
+      <p>Continue to checkout?
+        <button
+          className="CheckOut"
+          style={{ backgroundColor: 'green', color: 'white' }}
+          onClick={props.placeOrder}>
+          Place Order
+        </button>
+        <button
+          className="CheckOut"
+          style={{ backgroundColor: 'red', color: 'white' }}
+          onClick={props.cancel}>
+          Cancel
+        </button>
+      </p>
     </>
   )
 }
